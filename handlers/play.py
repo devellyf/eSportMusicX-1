@@ -208,7 +208,7 @@ async def play(_, message: Message):
                             text="𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=f"https://t.me/SiliconValleyBoy"
                         ),
                         InlineKeyboardButton(
-//t.me/EsportCl             text="𝗚𝗿𝗼𝘂𝗽", url=f"https://t.me/XD_dead_killer"
+                            text="𝗚𝗿𝗼𝘂𝗽", url=f"https://t.me/XD_dead_killer"
                         ),
                     ]
                 ]
