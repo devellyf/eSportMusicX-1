@@ -82,13 +82,13 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     draw.text((190, 630), f"Views: {views}", (255, 255, 255), font=font)
     draw.text(
         (190, 670),
-        f"Powered By: Hexor'xD (@Its_Hexor)",
+        f"Powered By: shy'xD (@I_follow_no_one)",
         (255, 255, 255),
         font=font,
     )
-    img.save("final.png")
-    os.remove("temp.png")
-    os.remove("background.png")
+    img.save("https://telegra.ph/file/b6b70687f349ddc353687.jpg")
+    os.remove("https://telegra.ph/file/b6b70687f349ddc353687.jpg")
+    os.remove("https://telegra.ph/file/3039e985954aa9985e152.jpg")
 
 
 @Client.on_message(
@@ -100,7 +100,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 )
 async def play(_, message: Message):
 
-    lel = await message.reply("🔎")
+    lel = await message.reply("🥀")
 
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -138,7 +138,7 @@ async def play(_, message: Message):
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"<i>❰𝗲𝗦𝗽𝗼𝗿𝘁 ❘ 𝗠𝘂𝘀𝗶𝗰𝗫❱ 𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 𝗨𝘀𝗲𝗿𝗕𝗼𝘁 𝗜𝘀 𝗡𝗼𝘁 𝗜𝗻 𝗧𝗵𝗶𝘀 𝗖𝗵𝗮𝘁' 𝗔𝘀𝗸 𝗔𝗱𝗺𝗶𝗻 𝗧𝗼 𝗦𝗲𝗻𝗱 /𝗽𝗹𝗮𝘆 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗙𝗼𝗿 𝗙𝗶𝗿𝘀𝘁 𝗧𝗶𝗺𝗲 𝗧𝗼 𝗔𝗱𝗱 𝗜𝘁 😎🤟</i>"
+            f"<i>❰𝐒𝐇𝐘𝐗𝐃 ❘ 𝗠𝘂𝘀𝗶𝗰𝗫❱ 𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 𝗨𝘀𝗲𝗿𝗕𝗼𝘁 𝗜𝘀 𝗡𝗼𝘁 𝗜𝗻 𝗧𝗵𝗶𝘀 𝗖𝗵𝗮𝘁' 𝗔𝘀𝗸 𝗔𝗱𝗺𝗶𝗻 𝗧𝗼 𝗦𝗲𝗻𝗱 /𝗽𝗹𝗮𝘆 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗙𝗼𝗿 𝗙𝗶𝗿𝘀𝘁 𝗧𝗶𝗺𝗲 𝗧𝗼 𝗔𝗱𝗱 𝗜𝘁 😎🤟</i>"
         )
         return
 
@@ -157,7 +157,7 @@ async def play(_, message: Message):
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/a67094fc4a99bca08114b.jpg"
+        thumb_name = "https://telegra.ph/file/b6b70687f349ddc353687.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -166,9 +166,9 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=f"https://t.me/eSport_BOTs"
+                        text="𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=f"https://t.me/SiliconValleyBoy"
                     ),
-                    InlineKeyboardButton(text="𝗚𝗿𝗼𝘂𝗽", url=f"https://t.me/EsportClan"),
+                    InlineKeyboardButton(text="𝗚𝗿𝗼𝘂𝗽", url=f"https://t.meXD_dead_killer"),
                 ]
             ]
         )
@@ -205,27 +205,27 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=f"https://t.me/eSport_BOTs"
+                            text="𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=f"https://t.me/SiliconValleyBoy"
                         ),
                         InlineKeyboardButton(
-                            text="𝗚𝗿𝗼𝘂𝗽", url=f"https://t.me/EsportClan"
+//t.me/EsportCl             text="𝗚𝗿𝗼𝘂𝗽", url=f"https://t.me/XD_dead_killer"
                         ),
                     ]
                 ]
             )
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/a67094fc4a99bca08114b.jpg"
+            thumb_name = "https://telegra.ph/file/b6b70687f349ddc353687.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=f"https://t.me/eSport_BOTs"
+                            text="𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=f"https://t.me/SiliconValleyBoy"
                         ),
                         InlineKeyboardButton(
-                            text="𝗚𝗿𝗼𝘂𝗽", url=f"https://t.me/EsportClan"
+                            text="𝗚𝗿𝗼𝘂𝗽", url=f"https://t.me/XD_dead_killer"
                         ),
                     ]
                 ]
@@ -274,9 +274,9 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=f"https://t.me/eSport_BOTs"
+                        text="𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=f"https://t.me/SiliconValleyBoy"
                     ),
-                    InlineKeyboardButton(text="𝗚𝗿𝗼𝘂𝗽", url=f"https://t.me/EsportClan"),
+                    InlineKeyboardButton(text="𝗚𝗿𝗼𝘂𝗽", url=f"https://t.me/XD_dead_killer"),
                 ]
             ]
         )
