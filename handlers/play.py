@@ -297,7 +297,7 @@ async def play(_, message: Message):
     if int(message.chat.id) in ACTV_CALLS:
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
-            photo="final.png",
+            photo="https://telegra.ph/file/3039e985954aa9985e152.jpg",
             caption="**🎵 𝗦𝗼𝗻𝗴:** {}\n**🕒 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻:** {} 𝗠𝗶𝗻\n**👤 𝗔𝗱𝗱𝗲𝗱 𝗕𝘆:** {}\n**#⃣ 𝗣𝗼𝘀𝗶𝘁𝗶𝗼𝗻:** {}".format(
                 title,
                 duration,
@@ -306,7 +306,7 @@ async def play(_, message: Message):
             ),
             reply_markup=keyboard,
         )
-        os.remove("final.png")
+        os.remove("https://telegra.ph/file/3039e985954aa9985e152.jpg")
         return await lel.delete()
     else:
         await callsmusic.pytgcalls.join_group_call(
@@ -320,7 +320,7 @@ async def play(_, message: Message):
             )
 
         await message.reply_photo(
-            photo="final.png",
+            photo="https://telegra.ph/file/3039e985954aa9985e152.jpg",
             reply_markup=keyboard,
             caption="**🎵 𝗦𝗼𝗻𝗴:** {}\n**🕒 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻:** {} 𝗠𝗶𝗻\n**👤 𝗔𝗱𝗱𝗲𝗱 𝗕𝘆:** {}\n**▶️ 𝗡𝗼𝘄 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗔𝘁 `{}`...**".format(
                 title, duration, message.from_user.mention(), message.chat.title
