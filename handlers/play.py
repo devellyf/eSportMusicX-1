@@ -86,7 +86,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
         (255, 255, 255),
         font=font,
     )
-    img.save("https://telegra.ph/file/b6b70687f349ddc353687.jpg")
+    img.save("final.png")
     os.remove("temp.png")
     os.remove("final.png")
 
@@ -297,7 +297,7 @@ async def play(_, message: Message):
     if int(message.chat.id) in ACTV_CALLS:
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
-            photo="https://telegra.ph/file/3039e985954aa9985e152.jpg",
+            photo="final.png",
             caption="**🎵 𝗦𝗼𝗻𝗴:** {}\n**🕒 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻:** {} 𝗠𝗶𝗻\n**👤 𝗔𝗱𝗱𝗲𝗱 𝗕𝘆:** {}\n**#⃣ 𝗣𝗼𝘀𝗶𝘁𝗶𝗼𝗻:** {}".format(
                 title,
                 duration,
@@ -306,7 +306,7 @@ async def play(_, message: Message):
             ),
             reply_markup=keyboard,
         )
-        os.remove("https://telegra.ph/file/3039e985954aa9985e152.jpg")
+        os.remove("final.png")
         return await lel.delete()
     else:
         await callsmusic.pytgcalls.join_group_call(
@@ -320,7 +320,7 @@ async def play(_, message: Message):
             )
 
         await message.reply_photo(
-            photo="https://telegra.ph/file/3039e985954aa9985e152.jpg",
+            photo="final.png",
             reply_markup=keyboard,
             caption="**🎵 𝗦𝗼𝗻𝗴:** {}\n**🕒 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻:** {} 𝗠𝗶𝗻\n**👤 𝗔𝗱𝗱𝗲𝗱 𝗕𝘆:** {}\n**▶️ 𝗡𝗼𝘄 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗔𝘁 `{}`...**".format(
                 title, duration, message.from_user.mention(), message.chat.title
