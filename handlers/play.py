@@ -86,9 +86,9 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
         (255, 255, 255),
         font=font,
     )
-    img.save("https://telegra.ph/file/b6b70687f349ddc353687.jpg")
-    os.remove("https://telegra.ph/file/b6b70687f349ddc353687.jpg")
-    os.remove("https://telegra.ph/file/3039e985954aa9985e152.jpg")
+    img.save("background.png")
+    os.remove("temp.png")
+    os.remove("final.png")
 
 
 @Client.on_message(
