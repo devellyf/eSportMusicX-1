@@ -39,7 +39,7 @@ async def stop(_, message: Message):
         pass
 
     await callsmusic.pytgcalls.leave_group_call(message.chat.id)
-    await message.reply_text("𝗘𝘀𝗽𝗼𝗿𝘁 𝗦𝘁𝗿𝗲𝗮𝗺 𝗘𝗻𝗱𝗲𝗱..!")
+    await message.reply_text("𝗦𝘁𝗿𝗲𝗮𝗺 𝗘𝗻𝗱𝗲𝗱..!")
 
 @Client.on_message(command(["skip"]) & other_filters)
 @errors
@@ -65,4 +65,4 @@ async def skip(_, message: Message):
                     ),
                 ),
             )
-    await message.reply_text("𝗦𝗸𝗶𝗽𝗽𝗲𝗱...🚩")
+    await message.reply_text("𝗦𝗸𝗶𝗽𝗽𝗲𝗱...🔄")
