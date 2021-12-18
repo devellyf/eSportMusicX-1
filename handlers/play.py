@@ -157,7 +157,7 @@ async def play(_, message: Message):
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/b6b70687f349ddc353687.jpg"
+        thumb_name = "https://telegra.ph/filefile/b6b70687f349ddc353687.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -168,7 +168,7 @@ async def play(_, message: Message):
                     InlineKeyboardButton(
                         text="𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=f"https://t.me/SiliconValleyBoy"
                     ),
-                    InlineKeyboardButton(text="𝗚𝗿𝗼𝘂𝗽", url=f"https://t.meXD_dead_killer"),
+                    InlineKeyboardButton(text="𝗚𝗿𝗼𝘂𝗽", url=f"https://t.me/XD_dead_killer"),
                 ]
             ]
         )
@@ -306,7 +306,7 @@ async def play(_, message: Message):
             ),
             reply_markup=keyboard,
         )
-        os.remove("final.png")
+        os.remove("https://telegra.ph/file/b6b70687f349ddc353687.jpg")
         return await lel.delete()
     else:
         await callsmusic.pytgcalls.join_group_call(
@@ -320,12 +320,12 @@ async def play(_, message: Message):
             )
 
         await message.reply_photo(
-            photo="final.png",
+            photo="g",
             reply_markup=keyboard,
             caption="**🎵 𝗦𝗼𝗻𝗴:** {}\n**🕒 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻:** {} 𝗠𝗶𝗻\n**👤 𝗔𝗱𝗱𝗲𝗱 𝗕𝘆:** {}\n**▶️ 𝗡𝗼𝘄 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗔𝘁 `{}`...**".format(
                 title, duration, message.from_user.mention(), message.chat.title
             ),
         )
-        os.remove("final.png")
+        os.remove("final.pngh")
         return await lel.delete()
 
